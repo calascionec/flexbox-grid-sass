@@ -8,7 +8,7 @@
 }
 
 @mixin make-offset($columns) {
-  @for $number from 1 through $columns {
+  @for $number from 0 through $columns {
     &-offset-#{$number} {
       margin-left: percentage(1 / $columns * $number);
     }
